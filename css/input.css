@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    @font-face {
+        font-family: 'kumbh';
+        font-weight: 700;
+        src: url('../font/KumbhSans-Bold.ttf') format('ttf'),
+        url('../font/KumbhSans-Regular.ttf') format('ttf');
+    }
+    @font-face {
+        font-family: 'kumbh';
+        font-weight: 400;
+        src: url('../font/KumbhSans-Bold.ttf') format('ttf'),
+        url('../font/KumbhSans-Regular.ttf') format('ttf');
+    }
+    
+}
+@layer components{
+    .active{
+        @apply absolute inset-0 bg-white bg-opacity-50 border-2 border-primary-orange rounded-md;
+        
+    }
+    .link{
+        @apply pb-6 text-neutral-darkGrayishBlue hover:text-neutral-Grayishblue transition duration-300;
+       
+    }
+    .link:hover{
+        @apply border-b border-primary-orange;
+    }
+}
