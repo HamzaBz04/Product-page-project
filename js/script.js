@@ -80,6 +80,9 @@ add.onclick=function(){
     }
 
 }
+cart.addEventListener("click",function(){
+    noti.style.display="none";
+})
 
 
 ////////// DELETE ////////////////
